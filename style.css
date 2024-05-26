@@ -223,20 +223,46 @@ h1{
 }
 
 /*team-hawk*/
-#team-hawk img{
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    background-position: center;
-}
+#team-hawk {
+    position: relative;
+    overflow: hidden;
+  }
 
-.fa-lg{
-    font-size: 2em;
-    padding: 20px;
-    margin-right: 13px;
-    border-radius: 50%;
-    background-color: whitesmoke;
-}
+  .team-hawk-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .background-overlay {
+    display: none;
+  }
+
+  .icons a {
+    margin: 0 15px; /* Adds space between the icons */
+    font-size: 2rem; /* Increases the size of the icons */
+  }
+
+  @media (max-width: 630px) {
+    #team-hawk {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://img.freepik.com/free-vector/remote-controlled-quadrocopter-composition_1284-29759.jpg?t=st=1711890454~exp=1711894054~hmac=e754509384014dff6b144d4fb56f6f55c8982e99cc3c728015d5ba17c5f5c83b&w=740') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    .team-hawk-img {
+      display: none;
+    }
+
+    #team-hawk-text {
+      width: 100%;
+    }
+  }
+
 
 /*contact*/
 
@@ -256,3 +282,7 @@ h1{
 #footer{
     background-color: black;
 }
+
+
+
+
